@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.9375rem;
+  background-color: var(--color-vdkblue);
+}
+h1,
+h2,
+h3,
+p,
+span,
+a {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}

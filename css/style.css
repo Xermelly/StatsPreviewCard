@@ -1,0 +1,121 @@
+@import url(./components.css);
+@import url(./global.css);
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+  margin: auto 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  background-color: var(--color-dkdsblue);
+  border-radius: 10px 0 0 10px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 60px;
+}
+.card-content h1 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+.card-content > p {
+  margin-bottom: 100px;
+  padding-right: 50px;
+}
+.card-container img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 0 10px 10px 0;
+}
+.img-overlay {
+  position: relative;
+}
+.img-overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #9a00fa50;
+}
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.card-stats h2 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+.card-stats p {
+  font-size: 0.6rem;
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media (max-width: 660px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card-container {
+    border-radius: 0 0 10px 10px;
+  }
+  .img-overlay {
+    grid-row: 1;
+  }
+  .img-overlay img {
+    border-radius: 10px 10px 0 0;
+  }
+  .img-overlay::before {
+    border-radius: 10px 10px 0 0;
+  }
+  .card-content {
+    padding: 30px;
+    text-align: center;
+  }
+  .card-content h1 {
+    font-size: 1.65rem;
+  }
+  .card-content > p {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .card-stats {
+    display: grid;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+  .card-stats h2 {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  .card-stats h2:first-child {
+    grid-area: a;
+  }
+  .card-stats h2 + p {
+    grid-area: b;
+  }
+  .card-stats p + p {
+    grid-area: d;
+  }
+  .card-stats p:last-child {
+    grid-area: f;
+  }
+}

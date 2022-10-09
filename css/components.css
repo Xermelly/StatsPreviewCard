@@ -1,0 +1,43 @@
+:root {
+  --color-vdkblue: hsl(233, 47%, 7%);
+  --color-dkdsblue: hsl(244, 38%, 16%);
+  --color-sviolet: hsl(277, 64%, 61%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-trans-white: hsla(0, 0%, 100%, 0.75);
+  --color-trans-white-2: hsla(0, 0%, 100%, 0.6);
+  --font-1-400: 400 0.9375rem/1.3 "Inter", sans-serif;
+  --font-1-700: 700 0.9375rem/1.3 "Inter", sans-serif;
+  --font-2-400: 400 0.9375rem/1.3 "Lexend Deca", sans-serif;
+}
+.color-very-darkblue {
+  color: var(--color-vdkblue);
+}
+.color-dark-dsblue {
+  color: var(--color-dkdsblue);
+}
+.color-soft-violet {
+  color: var(--color-sviolet);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-mp-white {
+  color: var(--color-trans-white);
+}
+.color-sh-white {
+  color: var(--color-trans-white-2);
+}
+.font-1-400 {
+  font: var(--font-1-400);
+}
+.font-1-700 {
+  font: var(--font-1-700);
+}
+.font-2-400 {
+  font: var(--font-2-400);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
