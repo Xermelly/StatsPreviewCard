@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-card-AJCnuYyOeX)
-- Live Site URL: [Vercel](https://ordersummary.xermelly.repl.co/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/stats-preview-card-component---OCm822ni)
+- Live Site URL: [Vercel](https://statspreviewcard-theta.vercel.app/)
 
 ## My process
 
